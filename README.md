@@ -1,2 +1,2 @@
 # Estrutura-de-Dados-FIFO
-Grupo composto por:
+Grupo composto por: Ana Luiza, Iury Araújo, Kauê Otsubo, Mayane Cristina
