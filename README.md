@@ -28,3 +28,4 @@ Utilize o compilador GCC:
 
 ```bash
 gcc fifo.c -o fifo
+./fifo
