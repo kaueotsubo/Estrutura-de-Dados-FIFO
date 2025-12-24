@@ -136,6 +136,16 @@ gcc fifo.c -o fifo
 
 ---
 
+## Identificação dos Processos
+
+Os processos possuem um campo de identificação (ID) utilizado exclusivamente para fins de visualização e análise dos resultados apresentados na tabela final.
+
+O algoritmo FIFO não depende do identificador do processo para definir a ordem de execução, uma vez que esta é determinada apenas pela ordem de chegada.
+
+Dessa forma, assume-se que os processos inseridos possuem identificadores únicos, ficando sob responsabilidade do usuário respeitar essa condição durante a entrada de dados. Mesmo em casos de IDs repetidos, o funcionamento do algoritmo e o cálculo das métricas não são afetados.
+
+---
+
 ## Considerações Finais
 
 Este projeto possibilitou a aplicação prática dos conceitos estudados em sala de aula, reforçando o entendimento sobre escalonamento de processos e análise de desempenho em Sistemas Operacionais. O simulador atende aos requisitos propostos no trabalho acadêmico e serve como base para futuras extensões com outros algoritmos de escalonamento.
