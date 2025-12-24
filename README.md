@@ -1,31 +1,141 @@
-# Estrutura-de-Dados-FIFO
-Grupo composto por: Ana Luiza, Iury Araújo, Kauê Otsubo, Mayane Cristina
+# Simulador de Escalonamento de Processos – FIFO
 
-Este projeto implementa um simulador do algoritmo de escalonamento **FIFO (First In, First Out)**, utilizado em Sistemas Operacionais para o gerenciamento de processos.
+## Sobre o Projeto
 
-## 📌 Objetivo
-Simular a execução de processos em uma CPU utilizando o algoritmo FIFO, calculando métricas clássicas de desempenho do escalonador.
+Este repositório contém o desenvolvimento de um **simulador de escalonamento de processos utilizando o algoritmo FIFO (First In, First Out)**, elaborado como trabalho teórico-prático da disciplina **Estrutura de Dados**, do curso superior de Tecnologia em Sistemas para Internet, no Instituto Federal do Acre – Campus Rio Branco.
 
-## ⚙️ Algoritmo FIFO
-O FIFO executa os processos na ordem de chegada, sem preempção.  
-Uma vez que um processo inicia sua execução, ele permanece na CPU até finalizar.
+O projeto foi desenvolvido **em grupo**, com foco tanto na correta implementação do algoritmo quanto na compreensão prática das métricas de desempenho estudadas em Sistemas Operacionais.
 
-## 📊 Métricas Calculadas
-- **Tempo de Início**
-- **Tempo de Término (Completion Time)**
-- **Waiting Time (Tempo de Espera)**
-- **Turnaround Time**
-- **Response Time**
-- **Throughput (Vazão)**
+---
 
-## 🧠 Estruturas Utilizadas
-- Struct para representar o processo
-- Fila dinâmica implementada com lista encadeada
-- Alocação dinâmica de memória (`malloc` e `free`)
+## Objetivo Geral
 
-## ▶️ Como Compilar
-Utilize o compilador GCC:
+Implementar um simulador funcional que execute processos seguindo o algoritmo FIFO e apresente, de forma clara, as métricas de desempenho individuais e globais do escalonador.
+
+---
+
+## Algoritmo FIFO (First In, First Out)
+
+O FIFO é um algoritmo de escalonamento **não preemptivo**, no qual os processos são executados exatamente na ordem em que chegam ao sistema.
+
+Principais características:
+
+* Execução sequencial conforme a chegada
+* Não ocorre interrupção de processos em execução
+* Simples de implementar e compreender
+* Pode gerar tempos de espera elevados em alguns cenários
+
+---
+
+## Decisões de Projeto
+
+Durante o desenvolvimento do simulador, foram adotadas as seguintes decisões:
+
+* Implementação exclusiva do algoritmo FIFO, conforme definido para o grupo
+* Utilização de **fila dinâmica** baseada em lista encadeada
+* Uso da linguagem C para maior controle sobre memória e estruturas de dados
+* Entrada de dados realizada manualmente pelo usuário via terminal
+
+Essas decisões visam manter o código organizado, eficiente e alinhado ao conteúdo estudado na disciplina.
+
+---
+
+## Estrutura dos Processos
+
+Cada processo é representado por uma estrutura contendo:
+
+* ID do processo
+* Tempo de chegada
+* Tempo de execução (burst time)
+* Métricas calculadas durante a simulação
+
+A fila de processos permite a inserção dinâmica, respeitando a ordem de chegada.
+
+---
+
+## Métricas de Desempenho
+
+### Métricas por processo:
+
+* **Tempo de Início**: instante em que o processo começa a utilizar a CPU
+* **Completion Time**: instante em que o processo termina sua execução
+* **Turnaround Time**: tempo total entre a chegada e o término do processo
+* **Waiting Time**: tempo total em espera na fila
+* **Response Time**: tempo entre a chegada do processo e sua primeira execução
+
+### Métricas globais do algoritmo:
+
+* Média do Waiting Time
+* Média do Turnaround Time
+* Média do Response Time
+* Throughput (vazão), calculado pela razão entre processos finalizados e tempo total de execução
+
+---
+
+## Entrada do Programa
+
+O simulador permite que o usuário informe manualmente:
+
+* Quantidade de processos
+* Identificador (ID) de cada processo
+* Tempo de chegada
+* Tempo de execução (burst time)
+
+---
+
+## Saída do Programa
+
+Como saída, o programa exibe:
+
+* Uma tabela contendo os dados e métricas de cada processo
+* As médias das métricas de desempenho
+* A vazão do sistema
+
+---
+
+## Exemplo de Execução
+
+Exemplo de entrada:
+
+* Processo 1: chegada = 0, duração = 5
+* Processo 2: chegada = 2, duração = 3
+
+Ordem de execução:
+P1 → P2
+
+---
+
+## Como Compilar
 
 ```bash
 gcc fifo.c -o fifo
+```
+
+## Como Executar
+
+```bash
 ./fifo
+```
+
+---
+
+## Tecnologias Utilizadas
+
+* Linguagem C
+* Compilador GCC
+* Estruturas de dados dinâmicas
+
+---
+
+## Integrantes do Grupo
+
+* Ana Luiza Costa
+* Iury Araújo
+* Kauê Otsubo
+* Mayane Cristina
+
+---
+
+## Considerações Finais
+
+Este projeto possibilitou a aplicação prática dos conceitos estudados em sala de aula, reforçando o entendimento sobre escalonamento de processos e análise de desempenho em Sistemas Operacionais. O simulador atende aos requisitos propostos no trabalho acadêmico e serve como base para futuras extensões com outros algoritmos de escalonamento.
