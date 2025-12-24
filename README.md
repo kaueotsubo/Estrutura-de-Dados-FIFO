@@ -109,7 +109,7 @@ P1 → P2
 
 A imagem abaixo apresenta um exemplo real da execução do simulador FIFO, incluindo a tabela de processos e as métricas calculadas:
 
-![Exemplo de execução do algoritmo FIFO](images/exemplo.png)
+![Exemplo de execução do algoritmo FIFO](img/exemplo.png)
 
 ---
 
