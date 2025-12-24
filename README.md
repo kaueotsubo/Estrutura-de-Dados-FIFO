@@ -105,6 +105,14 @@ P1 → P2
 
 ---
 
+## Visualização da Execução
+
+A imagem abaixo apresenta um exemplo real da execução do simulador FIFO, incluindo a tabela de processos e as métricas calculadas:
+
+![Exemplo de execução do algoritmo FIFO](images/exemplo_execucao.png)
+
+---
+
 ## Como Compilar
 
 ```bash
