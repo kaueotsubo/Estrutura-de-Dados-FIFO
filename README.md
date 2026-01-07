@@ -147,7 +147,7 @@ Dessa forma, assume-se que os processos inseridos possuem identificadores único
 
 ## Considerações Finais
 
-Com o desenvolvimento deste projeto, foi possível aplicar de forma prática os conteúdos vistos em sala de aula, facilitando o entendimento sobre escalonamento de processos e desempenho em Sistemas Operacionais. O simulador cumpre os requisitos definidos no trabalho e pode ser expandido futuramente com a inclusão de novos algoritmos de escalonamento;
+O desenvolvimento deste projeto possibilitou a aplicação prática dos conceitos estudados na disciplina de Estrutura de Dados, especialmente no uso de filas dinâmicas implementadas por meio de listas encadeadas. A construção do simulador permitiu compreender, de forma concreta, como as estruturas de dados são fundamentais para a organização e o controle de informações em sistemas computacionais.
 
 ---
 
