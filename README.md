@@ -147,7 +147,7 @@ Dessa forma, assume-se que os processos inseridos possuem identificadores único
 
 ## Considerações Finais
 
-Este projeto possibilitou a aplicação prática dos conceitos estudados em sala de aula, reforçando o entendimento sobre escalonamento de processos e análise de desempenho em Sistemas Operacionais. O simulador atende aos requisitos propostos no trabalho acadêmico e serve como base para futuras extensões com outros algoritmos de escalonamento.
+Com o desenvolvimento deste projeto, foi possível aplicar de forma prática os conteúdos vistos em sala de aula, facilitando o entendimento sobre escalonamento de processos e desempenho em Sistemas Operacionais. O simulador cumpre os requisitos definidos no trabalho e pode ser expandido futuramente com a inclusão de novos algoritmos de escalonamento;
 
 ---
 
