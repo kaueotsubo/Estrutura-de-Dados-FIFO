@@ -135,15 +135,6 @@ gcc fifo.c -o fifo
 
 ---
 
-## Integrantes do Grupo
-
-* Ana Luiza Costa
-* Iury Araújo
-* Kauê Otsubo
-* Mayane Cristina
-
----
-
 ## Identificação dos Processos
 
 Os processos possuem um campo de identificação (ID) utilizado exclusivamente para fins de visualização e análise dos resultados apresentados na tabela final.
@@ -157,3 +148,14 @@ Dessa forma, assume-se que os processos inseridos possuem identificadores único
 ## Considerações Finais
 
 Este projeto possibilitou a aplicação prática dos conceitos estudados em sala de aula, reforçando o entendimento sobre escalonamento de processos e análise de desempenho em Sistemas Operacionais. O simulador atende aos requisitos propostos no trabalho acadêmico e serve como base para futuras extensões com outros algoritmos de escalonamento.
+
+---
+
+## Integrantes do Grupo
+
+* Ana Luiza Costa
+* Iury Araújo
+* Kauê Otsubo
+* Mayane Cristina
+
+---
