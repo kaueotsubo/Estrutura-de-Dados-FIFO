@@ -136,13 +136,13 @@ void liberar_fila(Fila *f) {
 
 int main() {
     Fila *fila = criar_fila();
-    int n, id, cheg, dur;
+    int n, id, cheg, dur, i;
 
     printf("--- SIMULADOR FIFO ---\n");
     printf("Quantos processos deseja inserir? ");
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         printf("\nProcesso %d\n", i + 1);
         printf("ID: ");
         scanf("%d", &id);
@@ -160,3 +160,4 @@ int main() {
 
     return 0;
 }
+
